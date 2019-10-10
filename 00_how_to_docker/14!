@@ -1,6 +1,9 @@
-docker run -d --name lair \
+docker run -d \
+--name lair \
+--rm \
 -p 8080:80 \
 -e WORDPRESS_DB_PASSWORD=Kerrigan \
 -e WORDPRESS_DB_NAME=zerglings \
---link spawning-pool:zerglings \
+-e WORDPRESS_DB_USER=root \
+--link spawning-pool:mysql \
 wordpress
