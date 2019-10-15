@@ -1,15 +1,18 @@
 docker run -d -it \
 --name Abathur \
 -p 3000:3000 \
--v ~/:/root \
+--mount type=bind,source=/home/docker,target=/root/ \
 python:2-slim
 
 docker exec Abathur \
 pip install \
 Flask
 
-docker-machine ssh Char \
-'echo "from flask import Flask\napp = Flask(__name__)\n@app.route(\"/\")\ndef hello_world():\n\treturn \"<h1>Hello, World!</h1>\"" > ~/app.py'
+docker-machine ssh Char 'echo "from flask import Flask
+app = Flask(__name__)
+@app.route(\"/\")
+def hello_world():
+   return \"<h1>Hello, World!</h1>\"" > ~/app.py'
 
 docker exec -e \
 FLASK_APP=/root/app.py \
