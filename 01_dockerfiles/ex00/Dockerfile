@@ -1,4 +1,4 @@
-# docker build -t ex00 ./
+# docker build -t ex00 ./01_dockerfiles/ex00/
 # docker run --rm -ti ex00
 
 FROM alpine
