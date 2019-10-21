@@ -3,7 +3,7 @@
 
 FROM debian
 
-LABEL Cornelis Terblanche <m4dm0nk3y.za@gmail.com>
+LABEL Maintainer="m4dm0nk3y.za@gmail.com"
 
 ENV TS3SERVER_LICENSE=accept
 

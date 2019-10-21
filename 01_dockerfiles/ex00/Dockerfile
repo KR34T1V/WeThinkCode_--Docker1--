@@ -3,7 +3,7 @@
 
 FROM alpine
 
-MAINTAINER Cornelis Terblanche <m4dm0nk3y.za@gmail.com>
+LABEL Maintainer="m4dm0nk3y.za@gmail.com"
 
 RUN apk update && \
     apk upgrade && \
