@@ -6,6 +6,8 @@ https://github.com/VBrazhnik/docker-1
 
 DockerFiles
 https://github.com/wsargent/docker-cheat-sheet#dockerfile
+
+Teamspeak
 https://www.digitalocean.com/community/questions/fast-easy-tutorial-setup-teamspeak-server-on-debian-9-7
 
 Ruby Documentation
@@ -15,5 +17,13 @@ https://guides.rubyonrails.org/v3.2/migrations.html
 
 GitLab
 https://about.gitlab.com/install/#debian
+https://docs.gitlab.com/omnibus/manual_install.html
+
+https://gitlab.com/gitlab-org/omnibus-gitlab/issues/1308
 https://gitlab.com/gitlab-org/omnibus-gitlab/issues/4257
 https://gitlab.com/gitlab-org/omnibus-gitlab/issues/1350
+https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/files/gitlab-config-template/gitlab.rb.template
+https://docs.gitlab.com/omnibus/settings/grafana.html
+https://docs.gitlab.com/ee/administration/monitoring/prometheus/
+https://stackoverflow.com/questions/525592/find-and-replace-inside-a-text-file-from-a-bash-command
+https://linux.die.net/man/1/sed
