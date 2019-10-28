@@ -12,6 +12,7 @@ https://www.digitalocean.com/community/questions/fast-easy-tutorial-setup-teamsp
 
 Ruby Documentation
 https://www.ruby-lang.org/en/documentation/
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
 https://bitbucket.org/railstutorial/sample_app_4th_ed/src/master/
 https://guides.rubyonrails.org/v3.2/migrations.html
 
@@ -27,3 +28,5 @@ https://docs.gitlab.com/omnibus/settings/grafana.html
 https://docs.gitlab.com/ee/administration/monitoring/prometheus/
 https://stackoverflow.com/questions/525592/find-and-replace-inside-a-text-file-from-a-bash-command
 https://linux.die.net/man/1/sed
+
+https://www.peterbe.com/plog/no-space-left-on-device-on-osx-docker
