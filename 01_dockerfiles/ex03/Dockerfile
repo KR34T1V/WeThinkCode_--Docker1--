@@ -13,10 +13,9 @@ RUN apt-get update && \
     curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash && \
     EXTERNAL_URL="http://192.168.99.100:8080" && \
     apt-get install -y gitlab-ce && \
-    #grep -q "grafana['enable'] = true" /etc/gitlab/gitlab.rb && \
-    sed -i "s/grafana\['enable'\] = true/grafana[enable'] = false/g" /etc/gitlab/gitlab.rb || echo "grafana['enable'] = false" >> /etc/gitlab/gitlab.rb && \
-    sed -i "s/prometheus_monitoring\['enable'\] = false/prometheus_monitoring\['enable'\] = true/g" /etc/gitlab/gitlab.rb && \
-    sed -i "s/unicorn\['worker_timeout'\] = 60|unicorn\['worker_timeout'\] = 300/g" /etc/gitlab/gitlab.rb
+    sed -i "s/# grafana\['enable'\] = true/grafana['enable'] = false/g" /etc/gitlab/gitlab.rb || echo "grafana['enable'] = false" >> /etc/gitlab/gitlab.rb && \
+    sed -i "s/# prometheus_monitoring\['enable'\] = false/prometheus_monitoring\['enable'\] = true/g" /etc/gitlab/gitlab.rb && \
+    sed -i "s/# unicorn\['worker_timeout'\] = 60/unicorn\['worker_timeout'\] = 300/g" /etc/gitlab/gitlab.rb
 
 EXPOSE 443 80 22
 
