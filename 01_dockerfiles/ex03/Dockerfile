@@ -1,5 +1,8 @@
-# docker build -t ex03 ./01_dockerfiles/ex03/
-# docker run --name ex03 -itd --restart=on-failure -p 8080:80 -p 8022:22 -p 8443:443 --privileged ex03 
+# DEV:
+# docker build -t Gitlab-CE ./01_dockerfiles/ex03/ && docker run --name Gitlab-CE -itd --rm  -p 8080:80 -p 8022:22 -p 8443:443 --privileged Gitlab-CE 
+# LIVE:
+# docker build -t Gitlab-CE ./01_dockerfiles/ex03/ && docker run --name ex03 Gitlab-CE --restart=on-failure  -p 8080:80 -p 8022:22 -p 8443:443 --privileged Gitlab-CE
+
 # docker rmi -f $(docker images -a)
 
 FROM debian:10.1
