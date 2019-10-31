@@ -1,5 +1,5 @@
 # docker build -t ex01 ./01_dockerfiles/ex01/
-# docker run --rm -tip 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01
+# docker run --rm -tip 9987:9987 -p 10011:10011 -p 30033:30033 ex01
 
 FROM debian
 

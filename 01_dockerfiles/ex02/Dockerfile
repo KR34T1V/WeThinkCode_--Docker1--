@@ -1,4 +1,5 @@
 # git pull --recurse-submodules
+# docker build -t ft-rails:on-build ./01_dockerfiles/ex02/ft-rails/
 # docker build -t ex02 ./01_dockerfiles/ex02
 # docker run -it --rm -p 3000:3000 ex02 
 
